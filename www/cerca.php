@@ -80,24 +80,23 @@
 		$query_str = parse_url($url,PHP_URL_QUERY);//Parsegem la url per obtenir un string amb els parametres
 		parse_str($query_str,$query);//Parsejem l'string anterior per tal de obtenir un conjunt clau valor amb la query
 		require 'vendor/autoload.php'; // include Composer's autoloader
+		include 'cercaMusic.php';
+		include 'cercaGrup.php';
 
-		$client = new MongoDB\Client('mongodb+srv://sgdb:Hhtsod9xdj2JH6dK@sgbdcluster.wq7u4.mongodb.net/Test1?retryWrites=true&w=majority');//conexio amb Mongo
-		$collection = $client->Music->Musician;//selecionem la colecicio de musics
+		if(intval($query['grup_music'])==0 or intval($query['grup_music'])==2){
+			$Mresult = [];
+			$Mresult = cercaMusic(intval($query['instrument']),intval($query['OS']));
+			foreach ($Mresult as $entry) {
+				echo $entry['contact'], "\n";
+			}
+		}
 		
-		$filtre = [];//definim la veriable filtre
-		
-		if(intval($query['instrument'])!=0){//Si estem filtran per instrument, afagim l'instrument al llistat de restriccions.
-			$filtre = array_merge($filtre,['instrument' => intval($query['instrument'])]);
-		}
-		if(intval($query['OS'])!=0){//Idem amb estil de musica
-			$filtre = array_merge($filtre,['style_searched' => intval($query['OS'])]);
-		}
-		$result=[];//declarem result
-		if($filtre!=[]){//en cas de que el filtre estigui buit, deixem result en blanc
-			$result = $collection->find($filtre);
-		}
-		foreach ($result as $entry) {
-			echo $entry['contact'], "\n";
+		if(intval($query['grup_music'])==0 or intval($query['grup_music'])==1){
+			$Gresult = [];
+			$Gresult = cercaGrup(intval($query['instrument']),intval($query['OS']));
+			foreach ($Gresult as $entry) {
+				echo $entry['contact'], "\n";
+			}
 		}
 		?>
 	<script src="js/jquery-3.1.1.min.js"></script>

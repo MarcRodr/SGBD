@@ -1,0 +1,50 @@
+[
+    {
+        "_id": 1,
+        "name": "Electric Guitar",
+    },
+    {
+        "_id": 2,
+        "name": "Acoustic Guitar",
+    },
+	{
+        "_id": 3,
+        "name": "Bass",
+    },
+    {
+        "_id": 4,
+        "name": "Drums",
+    },
+	{
+        "_id": 5,
+        "name": "Piano/Keyboard",
+    },
+    {
+        "_id": 6,
+        "name": "Vocalist",
+    },
+	{
+        "_id": 7,
+        "name": "Violin",
+    },
+    {
+        "_id": 8,
+        "name": "Double Bass",
+    },
+	{
+        "_id": 9,
+        "name": "Trumpet",
+    },
+    {
+        "_id": 10,
+        "name": "Saxophone",
+    },
+	{
+        "_id": 11,
+        "name": "Trombone",
+    },
+    {
+        "_id": 12,
+        "name": "Accordion",
+    }
+]

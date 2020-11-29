@@ -1,0 +1,425 @@
+[
+    {
+        "_id": 1,
+        "name": "Arctic Monkeys",
+        "description": "Arguably the best British band of the Millennium? The Monkeys themselves probably think so.",
+        "photo": "https://images.radiox.co.uk/images/30908?crop=16_9&width=660&relax=1&signature=N18ZghrThWNzCLaHlRFMpbAsc4M=",
+        "contact": "contact@arcticmonkeys.com",
+        "style": 6,
+        "instrumentSearched": 3
+    },
+    {
+        "_id": 2,
+        "name": "Foo Fighters",
+        "description": "The nicest man in rock. The biggest rock band of the 21st Century. Simple.",
+        "photo": "https://images.radiox.co.uk/images/30920?crop=16_9&width=660&relax=1&signature=TcR7Nsgo2wtuyv963TV0XS1L_S0=",
+        "contact": "contact@foofighters.com",
+        "style": 5,
+        "instrumentSearched": 2
+    },
+    {
+        "_id": 3,
+        "name": "Blur",
+        "description": "Never afraid to evolve, Blur have grown up a lot since the 1990s - but never stopped making challenging music.",
+        "photo": "https://images.radiox.co.uk/images/30911?crop=16_9&width=660&relax=1&signature=jgXGLeJ8--EAdhUdrli8WCv2Qjg=",
+        "contact": "contact@blur.com",
+        "style": 18,
+        "instrumentSearched": 1
+    },
+    {
+        "_id": 4,
+        "name": "The Beatles",
+        "description": "John Lennon, Paul McCartney, George Harrison and Ringo Starr: four men from Liverpool who literally changed the way we understood and enjoyed pop music. They will live on forever.",
+        "photo": "https://images.radiox.co.uk/images/30979?crop=16_9&width=660&relax=1&signature=0t4eqE-uVsM6sYnTIurjt7zhgK4=",
+        "contact": "contact@thebeatles.com",
+        "style": 17,
+        "instrumentSearched": 10
+    },
+    {
+        "_id": 5,
+        "name": "Oasis",
+        "description": "Oasis once turned the UK music industry upside down - and a reunion of Liam and Noel Gallagher is on a lot of people\u2019s wish lists.",
+        "photo": "https://images.radiox.co.uk/images/30933?crop=16_9&width=660&relax=1&signature=jliE_38QniTa121B_hepLaCafXE=",
+        "contact": "contact@oasis.com",
+        "style": 18,
+        "instrumentSearched": 12
+    },
+    {
+        "_id": 6,
+        "name": "Guns N' Roses",
+        "description": "No other band captured the madness of the 80s rock quite like Axl, Slash and the boys did.",
+        "photo": "https://images.radiox.co.uk/images/30922?crop=16_9&width=660&relax=1&signature=FVyWCTfBshhc1pOEpYkjbtEb1kI=",
+        "contact": "contact@gunsn'roses.com",
+        "style": 15,
+        "instrumentSearched": 5
+    },
+    {
+        "_id": 7,
+        "name": "Green Day",
+        "description": "American Idiot reinvented the Californian punks and made a whole new generation love them.",
+        "photo": "https://images.radiox.co.uk/images/30917?crop=16_9&width=660&relax=1&signature=JCsSo9KKldFemd_v851owU-4q7A=",
+        "contact": "contact@greenday.com",
+        "style": 11,
+        "instrumentSearched": 4
+    },
+    {
+        "_id": 8,
+        "name": "AC/DC",
+        "description": "The hard-rocking Australians have been blasting eardrums since 1973 and kept going despite death, deafness and changing trends.",
+        "photo": "https://images.radiox.co.uk/images/30907?crop=16_9&width=660&relax=1&signature=tF4KwV7v8MqJCNAu_6vY6phEPbk=",
+        "contact": "contact@ac/dc.com",
+        "style": 17,
+        "instrumentSearched": 9
+    },
+    {
+        "_id": 9,
+        "name": "Florence + The Machine",
+        "description": "Florence Welch and her collective of like-minded friends are one of the best live acts in the world at the moment.",
+        "photo": "https://images.radiox.co.uk/images/30984?crop=16_9&width=660&relax=1&signature=ZVIoVrD3PlsKqdN8gUpr457SaSQ=",
+        "contact": "contact@florence+themachine.com",
+        "style": 8,
+        "instrumentSearched": 8
+    },
+    {
+        "_id": 10,
+        "name": "Courteeners",
+        "description": "Middleton\u2019s favourite sons have become one of the biggest live draws in the UK, thanks to Liam Fray\u2019s superb songwriting.",
+        "photo": "https://images.radiox.co.uk/images/30914?crop=16_9&width=660&relax=1&signature=D5jp4ASrOgUeARsaEnDAt9w_zTc=",
+        "contact": "contact@courteeners.com",
+        "style": 18,
+        "instrumentSearched": 9
+    },
+    {
+        "_id": 11,
+        "name": "Joy Division",
+        "description": "As influential as ever, Joy Division's dark sound remains as haunting now as it did in the post-punk years.",
+        "photo": "https://images.radiox.co.uk/images/30925?crop=16_9&width=660&relax=1&signature=oMgDAa0UluEjym9Fpj8E6fkUuAw=",
+        "contact": "contact@joydivision.com",
+        "style": 7,
+        "instrumentSearched": 7
+    },
+    {
+        "_id": 12,
+        "name": "The Stone Roses",
+        "description": "A band so good that they reduced fans to tears of joy when they got back together in 2012. Their debut album is a stone cold classic.",
+        "photo": "https://images.radiox.co.uk/images/30973?crop=16_9&width=660&relax=1&signature=vZ1x3W2JMSYZK58p4avi5CpI7qY=",
+        "contact": "contact@thestoneroses.com",
+        "style": 18,
+        "instrumentSearched": 7
+    },
+    {
+        "_id": 13,
+        "name": "The Rolling Stones",
+        "description": "As they call themselves, they ARE the greatest rock \u2019n\u2019 roll band in the world. Mick Jagger and Keith Richards are the quintessential rock duo.",
+        "photo": "https://images.radiox.co.uk/images/30972?crop=16_9&width=660&relax=1&signature=1F-FT6WvAn4CCKBgQWP5EQRicGo=",
+        "contact": "contact@therollingstones.com",
+        "style": 10,
+        "instrumentSearched": 8
+    },
+    {
+        "_id": 14,
+        "name": "Biffy Clyro",
+        "description": "After years of hard work and raucous shows, the Biff became stars of rock in 2007. They're now one of the country's biggest acts.",
+        "photo": "https://images.radiox.co.uk/images/30909?crop=16_9&width=660&relax=1&signature=MkMDSPm8o8lqBzXOy784SNeYLY8=",
+        "contact": "contact@biffyclyro.com",
+        "style": 9,
+        "instrumentSearched": 10
+    },
+    {
+        "_id": 15,
+        "name": "Coldplay",
+        "description": "Ignore the haters, Chris Martin and the boys can write a tune that'll lift up the heaviest of hearts.",
+        "photo": "https://images.radiox.co.uk/images/30913?crop=16_9&width=660&relax=1&signature=a0ARx4CUNjN3ydAgKDr068jThCk=",
+        "contact": "contact@coldplay.com",
+        "style": 18,
+        "instrumentSearched": 2
+    },
+    {
+        "_id": 16,
+        "name": "Blondie",
+        "description": "Fronted by the iconic Deborah Harry, these New York punks went stellar worldwide with some memorable hits.",
+        "photo": "https://images.radiox.co.uk/images/30906?crop=16_9&width=660&relax=1&signature=Pol7u7dcHixMPUIw4aI3-jB1kl8=",
+        "contact": "contact@blondie.com",
+        "style": 8,
+        "instrumentSearched": 2
+    },
+    {
+        "_id": 17,
+        "name": "Depeche Mode",
+        "description": "From their synth-pop roots in Essex to their dark rock stadium success in the 80s and 90s, Depeche Mode are a world-beating act.",
+        "photo": "https://images.radiox.co.uk/images/30912?crop=16_9&width=660&relax=1&signature=ohib4VyFw0lgQP778PL5LoiCIzA=",
+        "contact": "contact@depechemode.com",
+        "style": 18,
+        "instrumentSearched": 2
+    },
+    {
+        "_id": 18,
+        "name": "Elbow",
+        "description": "The heartfelt lyrics of Guy Garvey rightfully made Elbow the nation's favourite band.",
+        "photo": "https://images.radiox.co.uk/images/30916?crop=16_9&width=660&relax=1&signature=pApwwqPxM2roYM74fNAC4-sz4Ag=",
+        "contact": "contact@elbow.com",
+        "style": 17,
+        "instrumentSearched": 2
+    },
+    {
+        "_id": 19,
+        "name": "Fleetwood Mac",
+        "description": "Founded as a blues band, this British-American group weathered line-up changes and transformed their style into the epitome of West Coast rock cool.  ",
+        "photo": "https://images.radiox.co.uk/images/30904?crop=16_9&width=660&relax=1&signature=s573cd1FiEzs-qGHtQGqrGCtRFI=",
+        "contact": "contact@fleetwoodmac.com",
+        "style": 6,
+        "instrumentSearched": 7
+    },
+    {
+        "_id": 20,
+        "name": "Led Zeppelin",
+        "description": "There's a reason people would sell their soul for a Zeppelin reunion - they invented the rock rule book. ",
+        "photo": "https://images.radiox.co.uk/images/30928?crop=16_9&width=660&relax=1&signature=Rl9A3J17MycpaeJqRKK12Vlz_f0=",
+        "contact": "contact@ledzeppelin.com",
+        "style": 5,
+        "instrumentSearched": 7
+    },
+    {
+        "_id": 21,
+        "name": "Pink Floyd",
+        "description": "From eccentric psychedelia to stadium-straddling rock stars, the Floyd redefined what the rock album could do.",
+        "photo": "https://images.radiox.co.uk/images/30935?crop=16_9&width=660&relax=1&signature=WeRZUGkH6hb5bfh9qy41dy1X58I=",
+        "contact": "contact@pinkfloyd.com",
+        "style": 12,
+        "instrumentSearched": 9
+    },
+    {
+        "_id": 22,
+        "name": "Muse",
+        "description": "Muse have created their own sound and revolutionised what stadium rock can do. Not bad for three lads from Devon.",
+        "photo": "https://images.radiox.co.uk/images/30931?crop=16_9&width=660&relax=1&signature=z3PMVZszp0sXfuI2eXpOu1IDN_4=",
+        "contact": "contact@muse.com",
+        "style": 11,
+        "instrumentSearched": 7
+    },
+    {
+        "_id": 23,
+        "name": "Kings Of Leon",
+        "description": "Sex On Fire made them superstars but the band's brilliant and eclectic back catalogue offers something for everyone.",
+        "photo": "https://images.radiox.co.uk/images/30926?crop=16_9&width=660&relax=1&signature=JNY-7sdODPP2tz68Kk3J4Af0mNA=",
+        "contact": "contact@kingsofleon.com",
+        "style": 4,
+        "instrumentSearched": 9
+    },
+    {
+        "_id": 24,
+        "name": "The Smiths",
+        "description": "The unique songwriting collaboration between Morrissey and Johnny Marr, backed by the impeccable engine room of bassist Andy Rourke and drummer Mike Joyce.",
+        "photo": "https://images.radiox.co.uk/images/31002?crop=16_9&width=660&relax=1&signature=UbV7MrTHOn-FhtGclG6PDpQemDg=",
+        "contact": "contact@thesmiths.com",
+        "style": 14,
+        "instrumentSearched": 1
+    },
+    {
+        "_id": 25,
+        "name": "Nirvana",
+        "description": "The sound of Generation X, now the blueprint for alternative rock, Kurt Cobain was the most charismatic frontman of the 90s.",
+        "photo": "https://images.radiox.co.uk/images/30932?crop=16_9&width=660&relax=1&signature=YWK-DNJiJnIlLVNwCo9-WSOSTKY=",
+        "contact": "contact@nirvana.com",
+        "style": 6,
+        "instrumentSearched": 2
+    },
+    {
+        "_id": 26,
+        "name": "Queen",
+        "description": "Prog rock meets stadium rock, courtesy of four incredible talents: Freddie Mercury, Brian May, John Deacon and Roger Taylor. ",
+        "photo": "https://images.radiox.co.uk/images/30937?crop=16_9&width=660&relax=1&signature=XBtoFngJWvy7OegHFIySCW8N63Q=",
+        "contact": "contact@queen.com",
+        "style": 17,
+        "instrumentSearched": 4
+    },
+    {
+        "_id": 27,
+        "name": "Pulp",
+        "description": "The Pulp recipe is simple: some of the smartest lyrics in history, courtesy of Jarvis Cocker, combined with some of the best melodies.",
+        "photo": "https://images.radiox.co.uk/images/30936?crop=16_9&width=660&relax=1&signature=Wgj0muvxAQ0FNQMZJxFihefY3mk=",
+        "contact": "contact@pulp.com",
+        "style": 7,
+        "instrumentSearched": 5
+    },
+    {
+        "_id": 28,
+        "name": "The Who",
+        "description": "They epitomised the Mod movement in the 60s and forged the heavy rock movement in the 70s, Roger Daltrey, Pete Townshend, John Entwistle and Keith Moon were an iconic unit.",
+        "photo": "https://images.radiox.co.uk/images/31010?crop=16_9&width=660&relax=1&signature=xSNxqXaZIBK2Qh4EmPE6KEom5QQ=",
+        "contact": "contact@thewho.com",
+        "style": 15,
+        "instrumentSearched": 1
+    },
+    {
+        "_id": 29,
+        "name": "Mumford And Sons",
+        "description": "As soon as America took the folk rockers to their hearts, it became clear they were going to take over the world.",
+        "photo": "https://images.radiox.co.uk/images/30930?crop=16_9&width=660&relax=1&signature=OmdyzX-MhpfnT6KT6vFdYCvf-qc=",
+        "contact": "contact@mumfordandsons.com",
+        "style": 14,
+        "instrumentSearched": 2
+    },
+    {
+        "_id": 30,
+        "name": "Primal Scream",
+        "description": "They've changed their sound over the years but never lost the incredible energy, thanks to the swagger of frontman Bobby Gillespie.",
+        "photo": "https://images.radiox.co.uk/images/30934?crop=16_9&width=660&relax=1&signature=coFvJiIdDXOOj_3wRNXzkF3dQXQ=",
+        "contact": "contact@primalscream.com",
+        "style": 12,
+        "instrumentSearched": 4
+    },
+    {
+        "_id": 31,
+        "name": "Manic Street Preachers",
+        "description": "Lesser bands would have given up after Richey Edwards' disappearance but the Manics just got even better.",
+        "photo": "https://images.radiox.co.uk/images/30929?crop=16_9&width=660&relax=1&signature=O2udPVzyZdbZ5tyb8O6Xa7iv4LQ=",
+        "contact": "contact@manicstreetpreachers.com",
+        "style": 9,
+        "instrumentSearched": 9
+    },
+    {
+        "_id": 32,
+        "name": "Radiohead",
+        "description": "They started in the Britpop years, but transcended fashion with some intelligent, challenging rock music. ",
+        "photo": "https://images.radiox.co.uk/images/30938?crop=16_9&width=660&relax=1&signature=1rv4T_j0yd1Wpa4iZF_n_914wNo=",
+        "contact": "contact@radiohead.com",
+        "style": 18,
+        "instrumentSearched": 12
+    },
+    {
+        "_id": 33,
+        "name": "R.E.M.",
+        "description": "They went from underdogs to the biggest record deal in the music industry, but a reunion sadly seems unlikely.",
+        "photo": "https://images.radiox.co.uk/images/30940?crop=16_9&width=660&relax=1&signature=np2gVRRLiom5XNmIvjxTH5fOjfw=",
+        "contact": "contact@r.e.m..com",
+        "style": 13,
+        "instrumentSearched": 6
+    },
+    {
+        "_id": 34,
+        "name": "The Cure",
+        "description": "With a generation-spanning fanbase that loves them unconditionally, The Cure are a truly unique band.",
+        "photo": "https://images.radiox.co.uk/images/30999?crop=16_9&width=660&relax=1&signature=q68UcXku9zyyd7slbAN4pvmasGY=",
+        "contact": "contact@thecure.com",
+        "style": 17,
+        "instrumentSearched": 5
+    },
+    {
+        "_id": 35,
+        "name": "Red Hot Chill Peppers",
+        "description": "The Los Angeles funkateers have changed their line-up many time, but never lost their unique groove.",
+        "photo": "https://images.radiox.co.uk/images/30939?crop=16_9&width=660&relax=1&signature=ZIq4OeZd82nPlfFN5GVkwa_u2go=",
+        "contact": "contact@redhotchillpeppers.com",
+        "style": 16,
+        "instrumentSearched": 12
+    },
+    {
+        "_id": 36,
+        "name": "The Jam",
+        "description": "Remarkably young and remarkably fresh, The Jam didn't stick around long but left a lasting impression - and of course, frontman Paul Weller remains an icon.",
+        "photo": "https://images.radiox.co.uk/images/31000?crop=16_9&width=660&relax=1&signature=-u0QaevCedW7-NMkNevu08wlY68=",
+        "contact": "contact@thejam.com",
+        "style": 4,
+        "instrumentSearched": 6
+    },
+    {
+        "_id": 37,
+        "name": "The Strokes",
+        "description": "They gave rock music the kick up the backside it sorely needed in the early 2000s and for that we are eternally grateful.",
+        "photo": "https://images.radiox.co.uk/images/30983?crop=16_9&width=660&relax=1&signature=So9d_aIlf4KaTKnoaSaQEqjrleg=",
+        "contact": "contact@thestrokes.com",
+        "style": 7,
+        "instrumentSearched": 7
+    },
+    {
+        "_id": 38,
+        "name": "Stereophonics",
+        "description": "Bringing a classic British rock sound back to the charts, Stereophonics blasted out of Wales with debut Word Gets Around and never looked back.",
+        "photo": "https://images.radiox.co.uk/images/30976?crop=16_9&width=660&relax=1&signature=ucyY6BFadSX_4jxGjNrS2AwU9As=",
+        "contact": "contact@stereophonics.com",
+        "style": 11,
+        "instrumentSearched": 2
+    },
+    {
+        "_id": 39,
+        "name": "Suede",
+        "description": "Throwing down the gauntlet for other 1990s Britpop titans, Suede sounded even more relevant when they reunited a few years ago.",
+        "photo": "https://images.radiox.co.uk/images/30990?crop=16_9&width=660&relax=1&signature=Fm6SJvnioiXvKVuXgAgC_anVuuM=",
+        "contact": "contact@suede.com",
+        "style": 2,
+        "instrumentSearched": 6
+    },
+    {
+        "_id": 40,
+        "name": "The Charlatans",
+        "description": "Never settling into one sound for too long, The Charlatans have reshaped themselves time and again and never lost their following.",
+        "photo": "https://images.radiox.co.uk/images/30996?crop=16_9&width=660&relax=1&signature=54KKeRlfF-TxA-0EGnv80qA_Ijg=",
+        "contact": "contact@thecharlatans.com",
+        "style": 2,
+        "instrumentSearched": 10
+    },
+    {
+        "_id": 41,
+        "name": "Editors",
+        "description": "Blowing early comparisons to Joy Division out of the water, Editors became festival favourites for a very good reason and continue to produce addictive albums.",
+        "photo": "https://images.radiox.co.uk/images/30918?crop=16_9&width=660&relax=1&signature=ij8GdElR6f8eEGDtTsPKnUmEfyw=",
+        "contact": "contact@editors.com",
+        "style": 2,
+        "instrumentSearched": 9
+    },
+    {
+        "_id": 42,
+        "name": "The Clash",
+        "description": "Loved when they first burst onto the scene and even more iconic now, The Clash added brilliant songwriting to punk's raw materials.",
+        "photo": "https://images.radiox.co.uk/images/30998?crop=16_9&width=660&relax=1&signature=px3wzAEz6Ruvmatd9vAmQIe7WRo=",
+        "contact": "contact@theclash.com",
+        "style": 1,
+        "instrumentSearched": 7
+    },
+    {
+        "_id": 43,
+        "name": "Bloc Party",
+        "description": "After a debut album that's still a classic, Bloc Party continue to perform compelling live shows. ",
+        "photo": "https://images.radiox.co.uk/images/30910?crop=16_9&width=660&relax=1&signature=JvUjnGfEO8a46FHjyxG3aVLyGSk=",
+        "contact": "contact@blocparty.com",
+        "style": 16,
+        "instrumentSearched": 4
+    },
+    {
+        "_id": 44,
+        "name": "New Order",
+        "description": "From the ashes of the beloved Joy Division came a new sound, electronic, danceable and uniquely Mancunian.",
+        "photo": "https://images.radiox.co.uk/images/30915?crop=16_9&width=660&relax=1&signature=L2HeI0KsP6kPi7j-yyhvA9ixNLA=",
+        "contact": "contact@neworder.com",
+        "style": 16,
+        "instrumentSearched": 1
+    },
+    {
+        "_id": 45,
+        "name": "The Killers",
+        "description": "If you've ever been to an club and haven't danced to Mr Brightside, you're doing it wrong.",
+        "photo": "https://images.radiox.co.uk/images/30994?crop=16_9&width=660&relax=1&signature=Ca-f6SDHS56-J45zH9_sPGEDLuY=",
+        "contact": "contact@thekillers.com",
+        "style": 10,
+        "instrumentSearched": 7
+    },
+    {
+        "_id": 46,
+        "name": "The Libertines",
+        "description": "Thrilling fans with their love/hate/love bond, Carl Barat and Pete Doherty also turned out some of the finest British tracks.",
+        "photo": "https://images.radiox.co.uk/images/31003?crop=16_9&width=660&relax=1&signature=fZZGGGQYKc7iiu9ndqlKwUMfW7c=",
+        "contact": "contact@thelibertines.com",
+        "style": 1,
+        "instrumentSearched": 5
+    },
+    {
+        "_id": 47,
+        "name": "U2",
+        "description": "Love 'em or hate 'em, it's hard to deny that Bono and the boys put on a show like nobody else.",
+        "photo": "https://images.radiox.co.uk/images/31005?crop=16_9&width=660&relax=1&signature=j9pzbEFSBq-O-3gOjhL5Dhd0zPA=",
+        "contact": "contact@u2.com",
+        "style": 4,
+        "instrumentSearched": 7
+    }
+]

@@ -1,0 +1,74 @@
+[
+    {
+        "_id": 1,
+        "name": "Rock",
+    },
+    {
+        "_id": 2,
+        "name": "Pop",
+    },
+	{
+        "_id": 3,
+        "name": "Ska",
+    },
+    {
+        "_id": 4,
+        "name": "Reggae",
+    },
+	{
+        "_id": 5,
+        "name": "Electronic",
+    },
+    {
+        "_id": 6,
+        "name": "Metal",
+    },
+	{
+        "_id": 7,
+        "name": "Reggaeton",
+    },
+    {
+        "_id": 8,
+        "name": "Folk",
+    },
+	{
+        "_id": 9,
+        "name": "Funk",
+    },
+    {
+        "_id": 10,
+        "name": "Hip Hop",
+    },
+	{
+        "_id": 11,
+        "name": "Jazz",
+    },
+    {
+        "_id": 12,
+        "name": "Indie",
+    },
+	{
+        "_id": 13,
+        "name": "Flamenco",
+    },
+    {
+        "_id":14,
+        "name": "Classic",
+    },
+	{
+        "_id": 15,
+        "name": "Blues",
+    },
+    {
+        "_id": 16,
+        "name": "Rap",
+    },
+	{
+        "_id": 17,
+        "name": "Punk",
+    },
+    {
+        "_id": 18,
+        "name": "Psychedelic",
+    }
+]

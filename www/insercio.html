@@ -7,23 +7,89 @@
 	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body background = "img/background.jpg">
-	<!-- <form action="insercio.php" class="login">
+	<form action="insercio.php" class="insercio">
 		<h3 class="text-center">Registre</h3>
 		<div class="form-group">
-			<label for="Nom">Nom usuari</label>
-			<input type="text" class="form-control" name="Nom" id="Nom" placeholder="Escriu tu nom d'usuari">
+			<label for="Nom">Nom:</label>
+			<input type="text" class="form-control" name="Nom" id="Nom" placeholder="Escriu el teu nom">
 		</div>
 		<div class="form-group">
-			<label for="Pass">Contrasenya</label>
-			<input type="password" class="form-control" name="Pass" id="Pass" placeholder="Escriu la teva contrasenya">
+			<label for="Email">Email:</label>
+			<input type="text" class="form-control" name="Email" id="Email" placeholder="Escriu el teu email">
 		</div>
 		<div class="form-group">
-			<label for="Pass"> Repeteix la contrasenya</label>
-			<input type="password" class="form-control" name="Pass" id="Pass" placeholder="Repeteix la teva contrasenya">
+			<label for="URL">URL foto:</label>
+			<input type="text" class="form-control" name="URL" id="URL" placeholder="Escriu la URL de la foto">
+		</div>
+		<div class="form-group">
+			<div class="form-group">
+				<label for="instrument">Grup/Músic:</label>
+			</div>
+			<div class="form-group">
+				<select name="grup_music">
+				   <option selected value="0"> Mostrar tot </option>
+				   <option value="1">Grup de música</option>
+				   <option value="2">Músic</option>
+				</select>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="form-group">
+				<label for="instrument">Instrument:</label>
+			</div>
+			<div class="form-group">
+				<select name="instrument">
+				   <option selected value="0"> Mostrar tot </option>
+				   <option value="1">Electric Guitar</option>
+				   <option value="2">Acoustic Guitar</option>
+				   <option value="3">Bass</option>
+				   <option value="4">Drums</option>
+				   <option value="5">Piano/Keyboard</option>
+				   <option value="6">Vocalist</option>
+				   <option value="7">Violin</option>
+				   <option value="8">Double Bass</option>
+				   <option value="9">Trumpet</option>
+				   <option value="10">Saxophone</option>
+				   <option value="11">Trombone</option>
+				   <option value="12">Accordion</option>
+				</select>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="form-group">
+				<label for="instrument">Estil de música:</label>
+			</div>
+			<div class="form-group">
+				<select name="OS">
+				   <option selected value="0"> Mostrar tot </option>
+				   <option value="1">Rock</option>
+				   <option value="2">Pop</option>
+				   <option value="3">Ska</option>
+				   <option value="4">Reggae</option>
+				   <option value="5">Electronic</option>
+				   <option value="6">Metal</option>
+				   <option value="7">Reggaeton</option>
+				   <option value="8">Folk</option>
+				   <option value="9">Funk</option>
+				   <option value="10">Hip Hop</option>
+				   <option value="11">Jazz</option>
+				   <option value="12">Indie</option>
+				   <option value="13">Flamenco</option>
+				   <option value="14">Classic</option>
+				   <option value="15">Blues</option>
+				   <option value="16">Rap</option>
+				   <option value="17">Punk</option>
+				   <option value="18">Psychedelic</option>
+				</select>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="Descripcio">Descripcio:</label>
+			<textarea class="form-control" name="Descripcio" id="Descripcio" placeholder="Descripció del grup/músic" style="WIDTH: 228px; HEIGHT: 98px" rows="10" cols="30"></textarea>
 		</div>
 		<p class="text-center">
-			<button class="btn btn-primary btn-block">Registra't</button>
-		</p> -->
+			<button class="btn btn-primary btn-block">Registrar</button>
+		</p>
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </body>

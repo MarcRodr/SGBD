@@ -44,3 +44,15 @@ html{
 	padding-top: 60px; /* Place content 60px from the top */
 	padding: 15px;
 }
+
+.insercio{
+	width: 300px;
+	border: 1px solid #E1E1E1;
+	border-radius: 4px;
+	padding: 15px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color:rgba(255,255,255,0.7);
+}

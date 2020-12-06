@@ -29,18 +29,18 @@
 			<div class="form-group">
 				<select name="instrument">
 				   <option selected value="0"> Mostrar tot </option>
-				   <option value="1">Grups de música</option>
-				   <option value="2">Músic/a</option>
-				   <option value="3">Grups de música</option>
-				   <option value="4">Músic/a</option>
-				   <option value="5">Grups de música</option>
-				   <option value="6">Músic/a</option>
-				   <option value="7">Grups de música</option>
-				   <option value="8">Músic/a</option>
-				   <option value="9">Grups de música</option>
-				   <option value="10">Músic/a</option>
-				   <option value="11">Grups de música</option>
-				   <option value="12">Músic/a</option>
+				   <option value="1">Electric Guitar</option>
+				   <option value="2">Acoustic Guitar</option>
+				   <option value="3">Bass</option>
+				   <option value="4">Drums</option>
+				   <option value="5">Piano/Keyboard</option>
+				   <option value="6">Vocalist</option>
+				   <option value="7">Violin</option>
+				   <option value="8">Double Bass</option>
+				   <option value="9">Trumpet</option>
+				   <option value="10">Saxophone</option>
+				   <option value="11">Trombone</option>
+				   <option value="12">Accordion</option>
 				</select>
 			</div>
 		</div>
@@ -52,18 +52,24 @@
 			<div class="form-group">
 				<select name="OS">
 				   <option selected value="0"> Mostrar tot </option>
-				   <option value="1">Grups de música</option>
-				   <option value="2">Músic/a</option>
-				   <option value="3">Grups de música</option>
-				   <option value="4">Músic/a</option>
-				   <option value="5">Grups de música</option>
-				   <option value="6">Músic/a</option>
-				   <option value="7">Grups de música</option>
-				   <option value="8">Músic/a</option>
-				   <option value="9">Grups de música</option>
-				   <option value="10">Músic/a</option>
-				   <option value="11">Grups de música</option>
-				   <option value="12">Músic/a</option>
+				   <option value="1">Rock</option>
+				   <option value="2">Pop</option>
+				   <option value="3">Ska</option>
+				   <option value="4">Reggae</option>
+				   <option value="5">Electronic</option>
+				   <option value="6">Metal</option>
+				   <option value="7">Reggaeton</option>
+				   <option value="8">Folk</option>
+				   <option value="9">Funk</option>
+				   <option value="10">Hip Hop</option>
+				   <option value="11">Jazz</option>
+				   <option value="12">Indie</option>
+				   <option value="13">Flamenco</option>
+				   <option value="14">Classic</option>
+				   <option value="15">Blues</option>
+				   <option value="16">Rap</option>
+				   <option value="17">Punk</option>
+				   <option value="18">Psychedelic</option>
 				</select>
 			</div>
 		</div>

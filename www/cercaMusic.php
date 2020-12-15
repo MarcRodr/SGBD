@@ -12,8 +12,6 @@ if($estil!=0){//Idem amb estil de musica
 	$filtre = array_merge($filtre,['style_searched' => $estil]);
 }
 $result=[];//declarem result
-if($filtre!=[]){//en cas de que el filtre estigui buit, deixem result en blanc
-	$result = $collection->find($filtre);
-}
+$result = $collection->find($filtre);
 return $result;
 }

@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Cercador de grups/músics</title>
 	<link rel="stylesheet" href="css/estilos.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/w3.css">
 </head>
 <body background = "img/background.jpg">
 	<form action="cerca.php" class="sidebar">
@@ -88,12 +90,13 @@
 		require 'vendor/autoload.php'; // include Composer's autoloader
 		include 'cercaMusic.php';
 		include 'cercaGrup.php';
-
+		include 'mostrar.php';
+		
 		if(intval($query['grup_music'])==0 or intval($query['grup_music'])==2){
 			$Mresult = [];
 			$Mresult = cercaMusic(intval($query['instrument']),intval($query['OS']));
 			foreach ($Mresult as $entry) {
-				echo $entry['contact'], "\n";
+				mostrar($entry);
 			}
 		}
 		
@@ -101,7 +104,7 @@
 			$Gresult = [];
 			$Gresult = cercaGrup(intval($query['instrument']),intval($query['OS']));
 			foreach ($Gresult as $entry) {
-				echo $entry['contact'], "\n";
+				mostrar($entry);
 			}
 		}
 		?>

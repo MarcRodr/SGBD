@@ -88,22 +88,39 @@
 		$query_str = parse_url($url,PHP_URL_QUERY);//Parsegem la url per obtenir un string amb els parametres
 		parse_str($query_str,$query);//Parsejem l'string anterior per tal de obtenir un conjunt clau valor amb la query
 		require 'vendor/autoload.php'; // include Composer's autoloader
-		include 'cercaMusic.php';
-		include 'cercaGrup.php';
 		include 'mostrar.php';
 		
+		$client = new MongoDB\Client('mongodb+srv://sgdb:Hhtsod9xdj2JH6dK@sgbdcluster.wq7u4.mongodb.net/Music?retryWrites=true&w=majority');//conexio amb Mongo
+		$db = $client->Music;//selecionem la colecicio de musics
+		$instrument =intval($query['instrument']);
+		$estil = intval($query['OS']);
 		if(intval($query['grup_music'])==0 or intval($query['grup_music'])==2){
-			$Mresult = [];
-			$Mresult = cercaMusic(intval($query['instrument']),intval($query['OS']));
-			foreach ($Mresult as $entry) {
+			$filtre = [];//definim la veriable filtre
+
+			if($instrument!=0){//Si estem filtran per instrument, afagim l'instrument al llistat de restriccions.
+				$filtre = array_merge($filtre,['instrument' => $instrument]);
+			}
+			if($estil!=0){//Idem amb estil de musica
+				$filtre = array_merge($filtre,['style_searched' => $estil]);
+			}
+			$result=[];//declarem result
+			$result = $db->Musician->find($filtre);
+			foreach ($result as $entry) {
 				mostrar($entry);
 			}
 		}
 		
 		if(intval($query['grup_music'])==0 or intval($query['grup_music'])==1){
-			$Gresult = [];
-			$Gresult = cercaGrup(intval($query['instrument']),intval($query['OS']));
-			foreach ($Gresult as $entry) {
+			$filtre =[];
+			if($instrument!=0){//Si estem filtran per instrument, afagim l'instrument al llistat de restriccions.
+				$filtre = array_merge($filtre,['instrumentSearched' => $instrument]);
+			}
+			if($estil!=0){//Idem amb estil de musica
+				$filtre = array_merge($filtre,['style' => $estil]);
+			}
+			$result=[];//declarem result
+			$result = $db->Band->find($filtre);
+			foreach ($result as $entry) {
 				mostrar($entry);
 			}
 		}

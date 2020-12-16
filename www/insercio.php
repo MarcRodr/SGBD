@@ -23,13 +23,15 @@
 		$db = $client->Music;//selecionem la colecicio de musics
 		if(intval($query['grup_music'])==2){
 			$id = $db->Musician->count() + 1;
-			$data = ["_id" => $id, "name" => $query['Nom'],"description" => $query['Descripcio'],"photo" => $query['URL'],"contact" => $query['Email'],"style_searched" => intval($query['OS']),"instrument" => intval($query['instrument'])];
+			$data = ["_id" => $id, "name" => $query['Nom'],"description" => $query['Descripcio'],"photo" => $query['URL'],"contact" => $query['Email'],"style" => intval($query['OS']),"instrument" => intval($query['instrument'])];
 			$db->Musician->insertOne($data);
+			$db->User->updateOne(array("_id" => 2),array('$push' => array("musicians" => $id)));
 		}
 		if(intval($query['grup_music'])==1){
 			$id = $db->Band->count() + 1;
-			$data = ["_id" => $id, "name" => $query['Nom'],"description" => $query['Descripcio'],"photo" => $query['URL'],"contact" => $query['Email'],"style" => intval($query['OS']),"instrumentSearched" => intval($query['instrument'])];
+			$data = ["_id" => $id, "name" => $query['Nom'],"description" => $query['Descripcio'],"photo" => $query['URL'],"contact" => $query['Email'],"style" => intval($query['OS']),"instrument" => intval($query['instrument'])];
 			$db->Band->insertOne($data);
+			$db->User->updateOne(array("_id" => 2),array('$push' => array("bands" => $id)));
 		}
 
 		?>

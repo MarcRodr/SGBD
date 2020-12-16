@@ -84,46 +84,50 @@
 	<form action="menu.html" class="menu">
 		<?php
 		
+		//** Parsegem URL **//
 		$url = $_SERVER['REQUEST_URI'];//Obtenim la url amb els perametres
 		$query_str = parse_url($url,PHP_URL_QUERY);//Parsegem la url per obtenir un string amb els parametres
 		parse_str($query_str,$query);//Parsejem l'string anterior per tal de obtenir un conjunt clau valor amb la query
+		
+		//** Includes **/
 		require 'vendor/autoload.php'; // include Composer's autoloader
-		include 'mostrar.php';
+		include 'mostrar.php';//funcio per mostrar els resultats
 		
+		//** Conexio amb la bdd **//
 		$client = new MongoDB\Client('mongodb+srv://sgdb:Hhtsod9xdj2JH6dK@sgbdcluster.wq7u4.mongodb.net/Music?retryWrites=true&w=majority');//conexio amb Mongo
-		$db = $client->Music;//selecionem la colecicio de musics
-		$instrument =intval($query['instrument']);
-		$estil = intval($query['OS']);
-		if(intval($query['grup_music'])==0 or intval($query['grup_music'])==2){
-			$filtre = [];//definim la veriable filtre
-
-			if($instrument!=0){//Si estem filtran per instrument, afagim l'instrument al llistat de restriccions.
-				$filtre = array_merge($filtre,['instrument' => $instrument]);
-			}
-			if($estil!=0){//Idem amb estil de musica
-				$filtre = array_merge($filtre,['style_searched' => $estil]);
-			}
+		$db = $client->Music;//selecionem la base de dades del projecte
+		
+		//** Declarem algunes variables **//
+		$instrument =intval($query['instrument']);//Guardem en vriables per fer el codi mes llegible mes endevant
+		$estil = intval($query['OS']);//Guardem en vriables per fer el codi mes llegible mes endevant
+		$filtre =[];//Declarem filtre buit
+		
+		//** Construim el filtre **//
+		if($instrument!=0){//Si estem filtran per instrument, afagim l'instrument al llistat de restriccions.
+			$filtre = array_merge($filtre,['instrument' => $instrument]);
+		}
+		if($estil!=0){//Idem amb estil de musica
+			$filtre = array_merge($filtre,['style' => $estil]);
+		}
+		
+		//** Busquem **//
+		if(intval($query['grup_music'])==0 or intval($query['grup_music'])==2){//Si estem buscant musics o tot:
 			$result=[];//declarem result
-			$result = $db->Musician->find($filtre);
+			$result = $db->Musician->find($filtre);//Aplicem find de filtre sobre la coleccio Musician
 			foreach ($result as $entry) {
 				mostrar($entry);
 			}
 		}
 		
-		if(intval($query['grup_music'])==0 or intval($query['grup_music'])==1){
-			$filtre =[];
-			if($instrument!=0){//Si estem filtran per instrument, afagim l'instrument al llistat de restriccions.
-				$filtre = array_merge($filtre,['instrumentSearched' => $instrument]);
-			}
-			if($estil!=0){//Idem amb estil de musica
-				$filtre = array_merge($filtre,['style' => $estil]);
-			}
+		if(intval($query['grup_music'])==0 or intval($query['grup_music'])==1){//Si estem buscant grupos o tot:
+
 			$result=[];//declarem result
-			$result = $db->Band->find($filtre);
+			$result = $db->Band->find($filtre);//Aplicem find de filtre sobre la coleccio Band
 			foreach ($result as $entry) {
 				mostrar($entry);
 			}
 		}
+		
 		?>
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

@@ -18,7 +18,6 @@
 		$query_str = parse_url($url,PHP_URL_QUERY);//Parsegem la url per obtenir un string amb els parametres
 		parse_str($query_str,$query);//Parsejem l'string anterior per tal de obtenir un conjunt clau valor amb la query
 		require 'vendor/autoload.php'; // include Composer's autoloader
-		//$data = ["_id" => 300, "name" => "Tres Cientos","description" => "Gran pelicula","photo" => "http://300.png","contact" => "300@gmail.com","style" => 1,"instrumentSearched" => 1];
 		$client = new MongoDB\Client('mongodb+srv://sgdb:Hhtsod9xdj2JH6dK@sgbdcluster.wq7u4.mongodb.net/Music?retryWrites=true&w=majority');//conexio amb Mongo
 		$db = $client->Music;//selecionem la colecicio de musics
 		if(intval($query['grup_music'])==2){

@@ -10,7 +10,7 @@ function mostrar($o){
     <div class="w3-container">
       <p>Contacte: <b>' . $o['contact'] .'</b></p>
       <hr>
-      <img src="' . $o['photo'] . '" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+      <a href="' . $o['photo'] . '"><img src="' . $o['photo'] . '" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px"></a>
       <p>"' . $o['description'] . '"</p><br>
     </div>
   </div>

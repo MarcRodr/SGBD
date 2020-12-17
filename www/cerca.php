@@ -129,6 +129,10 @@
 		}
 		
 		?>
+	<br></br>
+	<p class="text-center">
+		<button class="btn btn-primary btn-block">Tornar al menú</button>
+	</p>
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	</form>
